@@ -20,8 +20,6 @@ class CartApi:
                 cookies=cookies
             )
 
-            print(response.json())
-
             allure.attach(
                 body=response.content,
                 name='API: add product to cart',
